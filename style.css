@@ -1,0 +1,119 @@
+header {
+  position: fixed;               /* keeps header at the top while scrolling */
+  top:0;                      
+  width: 100%;                   
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: #000;       
+  padding: 15px 50px;
+  border-bottom: 1px solid #D4AF37; /* gold accent line */
+  box-shadow: 0 2px 10px rgba(212, 175, 55, 0.2); /* subtle gold glow */
+  z-index: 1000;                 /* keep it on top of everything */
+  box-sizing: border-box;
+}
+
+nav a {
+  color: #D4AF37; /* gold */
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 600;
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+#DVC-logo { 
+  width:250px;
+}
+.logo-container {
+  text-align: center;
+}
+.logo-container img {
+  width: 700px;
+}
+
+#about-section {
+  text-align: left;
+  color: #ddd;
+  max-width: 700px;     
+  margin-left: 80px;     
+  margin-top: 50px;
+  line-height: 1.8;
+  scroll-margin-top: 150px;
+}
+
+#team-section {
+  text-align: center;
+  color: #ddd;
+  margin: 80px auto 0 auto; 
+  max-width: 1200px; 
+  line-height: 1.8;
+  scroll-margin-top: 150px;
+}
+
+
+#about-sentence {
+  font-size: 18px;      
+  width: 85%;           
+}
+
+/* Team Section Layout */
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  gap: 40px; /* space between members */
+  justify-items: center; /* centers items horizontally in each grid cell */
+  align-items: start;
+  margin-top: 30px;
+  max-width: 1000px; /* keeps layout centered */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Individual Member */
+.team-member {
+  text-align: center;
+  width: 250px; /* standard photo box width */
+  color: #fff;
+}
+
+/* Image styling */
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #D4AF37;
+}
+
+/* Name and role text */
+.team-member h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #D4AF37;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+
+
+body {
+  background-image: url("Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  margin: 0;                /* remove default white margins */
+overflow-x: hidden;       /* prevent header from being cut off on right */
+}
+
+main {
+  margin-top: 120px; /* adjust if your header height changes */
+}
+
